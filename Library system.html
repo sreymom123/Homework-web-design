@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Library management system</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <nav>
+            <h4>
+                <span class="material-symbols-outlined">book_5</span>
+                <span>Library management system</span>
+            </h4>
+            <!-- Main item -->
+            <div>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        grid_view
+                    </span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>
+                    <span>Member</span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">book</span>
+                    <span>
+                        Book list
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">low_priority</span>
+                    <span>
+                        Borrow &Return
+                    </span>
+                </a>
+            </div>
+            <!-- user profile -->
+             <div>
+                <p id="user-profile">J</p>
+                <p>Jonh Smith</p>
+             </div>
+        </nav>
+    </header>
+    <main>
+        <!-- flex container -->
+        <section class="flex justify-between">
+            <!-- flex container item -->
+            <div>
+                <h2>Welcome back, Jonh Smith</h2>
+                <p>Quick access on our system with this dashboard.</p>
+            </div>
+            <div>
+                <button class="btn bg-blue">Add new member</button>
+                <button class="btn bg-orange">Add new book</button>
+                <button class="btn bg-green">Return book</button>
+                <button class="btn bg-purple">Borrow book</button>
+                
+            </div>
+        </section>
+        <section class="card">
+            <h4>System overview</h4>
+            <p>Hello everyone welcome to my website</p>
+            <div class="flex">
+                <div class="flex items-center flex-col my-24">
+                    <span id="icon-container" class="flex justity-center items-center bg-blue " >
+                        <span class="material-symbols-outlined">patient_list</span>
+                    </span>
+                    <h3>200</h3>
+                    <p>Total of the member</p>
+                </div>
+                <div class="flex items-center flex-col my-24">
+                    <span id="icon-container" class="flex justity-center items-center bg-orange" >
+                        <span class="material-symbols-outlined">local_library</span>
+                    </span>
+                    <h3>2300</h3>
+                    <p>Total of book</p>
+                </div>
+                <div class="flex items-center flex-col my-24">
+                    <span id="icon-container" class="flex justity-center items-center bg-green" >
+                        <span class="material-symbols-outlined">auto_stories</span>
+                    </span>
+                    <h3>200</h3>
+                    <p>Available book for borrow</p>
+                </div>
+                <div class="flex items-center flex-col my-24">
+                    <span id="icon-container" class="flex justity-center items-center bg-purple" >
+                        <span class="material-symbols-outlined">auto_stories_off</span>
+                    </span>
+                    <h3>35</h3>
+                    <p>Book has been borrow today</p>
+                </div>
+                <div class="flex items-center flex-col my-24">
+                    <span id="icon-container" class="flex justity-center items-center bg-pink" >
+                        <span class="material-symbols-outlined">book_4</span>
+                    </span>
+                    <h3>06</h3>
+                    <p>Book will return today</p>
+                </div>
+                <div class="flex items-center flex-col my-24">
+                    <span id="icon-container" class="flex justity-center items-center bg-yellow" >
+                        <span class="material-symbols-outlined">newsstand</span>
+                    </span>
+                    <h3>03</h3>
+                    <p>Books late to return</p>
+                </div>
+                
+            </div>
+            
+
+            </div>
+        </section>
+        <section class="card">
+                <h4>Record of the books that will return today and over deadline.</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>MEMBER ID</th>
+                            <th>MEMBER NAME</th>
+                            <th>BOOK TITLE</th>
+                            <th>BORROW DATE</th>
+                            <th>DUE DATE</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="bk">MEM001</td>
+                            <td>Alice Johnson</td>
+                            <td>The Great Adventure</td>
+                            <td>2024-07-01</td>
+                            <td>2024-07-15</td>
+                            <td><span class="box">Overdue</span></td>
+                        </tr>
+                        <tr>
+                            <td class="bk">MEM002</td>
+                            <td>Bob Williams</td>
+                            <td>Mystery of the Old House</td>
+                            <td>2024-06-20</td>
+                            <td>2024-07-04</td>
+                            <td><span class="box0">On Time</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="card">
+                <h4>Popular books</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>BOOK ID</th>
+                            <th>TITLE</th>
+                            <th>AUTHOR</th>
+                            <th>GENRE</th>
+                            <th>AVAILABILITY</th>
+                            <th>ACTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="bk">BK001</td>
+                        <td>The Great Adventure</td>
+                        <td>Jane Doe</td>
+                        <td>Fantasy</td>
+                        <td><span class="available">Available</span></td>
+                        <td><a href="#">Edit</a><a href="#" class="delete">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td class="bk">BK002</td>
+                        <td>Mystery of the Old House</td>
+                        <td>John Smith</td>
+                        <td>Mystery</td>
+                        <td><span class="on-loan">On Loan</span></td>
+                        <td><a href="#">Edit</a><a href="#" class="delete">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td class="bk">BK003</td>
+                        <td>Coding for Beginners</td>
+                        <td>Alice Wonderland</td>
+                        <td>Programming</td>
+                        <td><span class="available">Available</span></td>
+                        <td><a href="#">Edit</a><a href="#" class="delete">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td class="bk">BK004</td>
+                        <td>The Art of Cooking</td>
+                        <td>Chef Sammy</td>
+                        <td>Cookbook</td>
+                        <td><span class="unavailable">Unavailable</span></td>
+                        <td><a href="#">Edit</a><a href="#" class="delete">Delete</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        <!-- <section class="card-2">
+            <h4>Recoard of the books that will return today</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>MEMBER ID</th> 
+                        <th>Member Name</th>               
+                        <th>MEMBER NAME</th>
+                        <th>BOOK TITLE</th>
+                        <th>BORROW DATE</th>
+                        <th>STATUS</th>
+                    </tr>
+                </thead>    
+                <tbody>
+                    <tr>
+                        <td>Mem001</td>                
+                        <td>Alic Johnson</td>
+                        <td>THE CREAT ADVENTURE</td>
+                        <td>2024-07-01</td>
+                        <td>2024-07-15</td>
+                        <td><p class="box0">Over Due</p></td>
+                    </tr>                
+                    <tr>
+                        <td>Mem002</td>                
+                        <td>Bob wiliams</td>
+                        <td>Mystery of the okl House</td>
+                        <td>2024-06-20</td>
+                        <td>2024-07-09</td>
+                        <td><p class="box">On Time</p></td>
+                    </tr>
+                </tbody>               
+        </section>
+        <section class="card-3">
+            <h4>Popular Book</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book ID</th> 
+                        <th>Title</th>               
+                        <th>Author</th>
+                        <th>genre</th>
+                        <th>Avallability</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>    
+                <tbody>
+                    <tr>
+                        <td>Mem001</td>                
+                        <td>Alic Johnson</td>
+                        <td>THE CREAT ADVENTURE</td>
+                        <td>2024-07-01</td>
+                        <td>2024-07-15</td>
+                        <td><p class="box0">Over Due</p></td>
+                    </tr>                
+                    <tr>
+                        <td>Mem002</td>                
+                        <td>Bob wiliams</td>
+                        <td>Mystery of the okl House</td>
+                        <td>2024-06-20</td>
+                        <td>2024-07-09</td>
+                        <td><p class="box">On Time</p></td>
+                    </tr>
+                </tbody>               
+        </section> -->
+        </main>
+    
+    <footer>
+        <p>@AGA institude</p>
+    </footer>
+</body>
+</html>
